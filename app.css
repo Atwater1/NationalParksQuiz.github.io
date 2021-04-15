@@ -1,0 +1,511 @@
+/*****General*****/
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background:url("/backgrounds/mapFlatLay.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/*****Card Details*****/
+
+.card-wrapper {
+    position: absolute;
+    box-shadow: 0px 5px 30px rgba(0,0,0,1);
+    border: 1.25rem solid #f2f2f2;
+    border-radius: 15px;
+    height:34rem;
+    width:52rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-family: 'Yellowtail', cursive;
+    letter-spacing: 2px;
+    background: transparent;
+}
+
+/*****Start Page*****/
+.startBackground{
+    background:url('/backgrounds/mtnValley.jpg') no-repeat center center/cover;
+}
+
+#discover{
+    position: absolute;
+    top:6.5rem;
+    margin:0 1rem;
+    color: #f2f2f2;
+    font-size: 3.5rem;
+    letter-spacing: -2px;
+    transform: skewY(-1deg);
+}
+
+.mainTextBox{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.mainText{
+    z-index: 1;
+}
+
+.mainText,
+.mainText-shadow{
+    position:absolute;
+    top: 6.5rem;
+    left: -18px;
+    display: block;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    font-size: 11.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: -28px;
+    transform: skewY(-15deg);
+    -webkit-text-stroke: 2px #f2f2f2;
+    background: url('/backgrounds/clouds.jpg') no-repeat center center/cover;
+    background-clip:text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.mainText-shadow{
+    text-shadow: 0.5px 0.5px #333333, 
+    1px 1px #333333, 
+    2px 2px #333333, 
+    2.5px 2.5px #333333, 
+    3px 3px #333333, 
+    3.5px 3.5px #333333, 
+    4px 4px #333333, 
+    4.5px 4.5px #DC6227, 
+    5px 5px #DC6227, 
+    5.5px 5.5px #DC6227, 
+    6px 6px #DC6227, 
+    6.5px 6.5px #DC6227,
+    7px 7px #DC6227, 
+    7.5px 7.5px #DC6227,
+    8px 8px #DC6227,
+    8.5px 8.5px #DC6227,
+    9px 9px #DC6227;
+}
+
+
+.startBtn{
+    z-index: 2;
+    position: relative;
+    top: -8.5rem;
+    left: 25rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 22rem;
+    border:solid white 2px;
+    text-align: center;
+    color:#f2f2f2;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 2rem;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.startBtn::before,
+.startBtn::after {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  display: block;
+  content: '';
+  border-style: solid;
+  border-color:transparent;
+  transition: all 0.5s ease;
+}
+
+.startBtn::before {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    display: block;
+    content: '';
+    border-color:transparent;
+    border-width: 2px 0 0 2px;
+  }
+
+  .startBtn::after {
+    bottom: -5px;
+    right: -5px;
+    border-width: 0 2px 2px 0;
+  }
+
+.startBtn:hover {
+  background:#DC6227;
+}
+.startBtn:hover::before,
+.startBtn:hover::after {
+  border-color:#DC6227;
+  width: calc(100% + 7px);
+  height: calc(100% + 7px);
+}
+
+/*****Location Page*****/
+.locationBackground{
+    background:#f2f2f2;
+}   
+
+#region_choice{
+    color: #333333;
+}
+
+.svg-content { 
+    position: relative;
+    left: 3rem;
+    top: -1.5rem;
+    transform: rotate(-4deg);
+}
+
+.clickArea:hover{
+    transition: transform 150ms;
+}
+
+.NE:hover{
+    transform: translate(0.4rem, -0.6rem); 
+}
+
+.SE:hover{
+    transform: translateY(0.6rem); 
+}
+
+.MW:hover{
+    transform: translateY(-0.6rem); 
+}
+
+.SW:hover{
+    transform: translateY(0.6rem); 
+}
+
+.W:hover{
+    transform: translateY(-0.6rem); 
+}
+
+/*****Game Page*****/ 
+.gameBackground{
+    background:#f2f2f2;
+}
+
+#questionNumber{
+    position:relative;
+    left:1rem;
+    color:#333333;
+}
+
+.stamp-progressBox{
+    position: relative;
+    top:-3rem;
+    left:43rem;
+    height: 7rem;
+    width:6rem;
+    border:solid #333333 1px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    padding:1.5rem;
+}
+
+.stamp-progress{
+position: relative;
+top:0rem;
+left:.2rem;
+color: #333333;
+}
+
+.stamp-progressBox > span{
+    position:relative;
+    top:-0.5rem;
+    left: .2rem;
+    font-size: 1.4rem;
+}
+
+.gameText-box{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+.questions-wrapper{
+    height: 100%;
+    position: relative;
+    top:-6rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    font-family: 'Indie Flower', cursive;
+    font-size: 3.5rem;
+    color: #333333;
+    text-align: center;
+}
+
+.vl1 {
+    position: absolute;
+    border-left: .5px solid black;
+    height: 250px;
+    left: 54%;
+    margin-left:0;
+    top: 12rem;
+  }
+
+.answers-wrapper{
+    position:relative;
+    top:-5.5rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:42%;
+    height: 25rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+.multiple-choice-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    width: 100%;
+    height: 100%;
+}
+
+.choice_container{
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem;
+    border: solid #DDDDDD .2px;
+}
+
+.clickableArea{
+    position:absolute;
+    width: 8rem;
+    height: 11rem;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem;
+    background:transparent;
+    z-index: 2;
+}
+
+.choice_container:hover{  
+    border:none;
+    cursor: pointer;
+    transform: translateY(-0.2rem);
+    transition: transform 150ms;
+    box-shadow: 0px 7px 4px 0px rgba(50, 50, 50, 0.75);
+}
+
+.choice_container:hover > .choice_icon{
+    cursor: pointer;
+}
+
+.choice_icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    background:transparent;
+}
+
+.choice_text{
+    margin-left:.5rem;
+    width:100%;
+    border-left: 0;
+    font-size: 1rem;
+}
+
+/********Results Page *********/
+.resultsBackground{
+    background: #f2f2f2;
+}
+
+#greetingsFrom{
+    color:#333333;
+}
+
+.park-stamp{
+    position: relative;
+    height: 10rem;
+    width:9rem;
+    top:-3.5rem;
+    left:38rem;
+    z-index:2;
+    animation: stampAnimation 4s ease-in-out;
+  }
+
+  @keyframes stampAnimation {
+    0%{}
+    20%{
+      transform:scale(3,3) translate(-75%,35%);
+        }
+    85%{
+      transform:scale(3,3)translate(-75%,35%);
+        }
+    }
+
+.park-img{
+    width: 10rem;
+    height: 11.2rem;
+    display:inline-block;
+    margin-left:25px;
+    padding:10px;
+    background: white;
+    position:;
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+    /*The stamp cutout will be created using crisp radial gradients*/
+    background: radial-gradient(
+        transparent 0px, 
+        transparent 4px, 
+         white 4px,
+         white
+      );
+    /*reducing the gradient size*/
+    background-size: 20px 20px;
+    /*Offset to move the holes to the edge*/
+    background-position: -10px -10px;
+  }
+
+  .stampText{
+    position:relative;
+    top:-2.8rem;
+    left:2rem;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:#fafafa;
+    text-transform:uppercase;
+  }
+
+.park-name{
+    font-weight:bold;
+    text-align:center;
+    font-family: 'Lato', sans-serif;
+    font-size:1rem;
+}
+  
+.park-type{ 
+    width: 90%;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size:.5rem;
+}
+  
+.park-type:before,
+.park-type:after {
+    background-color: #fafafa;
+    content: "";
+    display: inline-block;
+    height: .1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+  
+.park-type:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+  
+.park-type:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.cardText-box{
+    position: relative;
+    top: -10rem;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.cardLeft-wrapper, .cardRight-wrapper{
+  font-family:'Indie Flower', cursive;
+}
+
+.cardLeft-wrapper{
+    position:relative;
+    top:-3rem;
+    bottom: -1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height: 85%;
+    margin-right: 2.5rem;
+    font-size: 1.15rem;
+}
+
+.about-park{
+    min-height:40%;
+    width:100%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.other-options{
+    width:100%;
+}  
+
+.vl2 {
+    position: absolute;
+    border-left: .5px solid black;
+    height: 250px;
+    left: 54%;
+    margin-left:2rem;
+    top: 9rem;
+  }
+
+.cardRight-wrapper{
+    position:relative;
+    top:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+}
+
+.address{
+    font-size: 2rem;
+    width: 100%;
+    margin-top: .5rem;
+    padding-left: .5rem;
+    border-bottom: solid black 1px;
+}
