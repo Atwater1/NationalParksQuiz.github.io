@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Parks Quiz</title>
+    <link href="app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@100;400;900&family=Montserrat:wght@100;200;400;800&family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+<body onload="displayResults()">
+    <div class="container">
+        <div class="card-wrapper resultsBackground">
+          <div class="title" id="greetingsFrom">Greetings from:</div>
+          <div class="park-stamp">
+            <span class="park-img" id="park-img"></span>
+            <!--<img  src="/parks/badlands.jpg" class="park-img" id="park-img"/>-->
+            <div class="stampText">
+            <div class="park-name" id="park-name">Zion</div>
+            <div class="park-type" id="park-type">National Park</div>
+          </div>  
+          </div>
+          <div class="cardText-box">
+              <div class="cardLeft-wrapper">
+                <p class="about-park" id="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="other-options" id="options">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class="vl2"></div>
+              <div class="cardRight-wrapper">
+                <p class="address" id="park">Dry Tortugas</p>
+                <p class="address" id="site-type">National Park</p>
+                <p class="address" id="park-state">Florida, USA</p>
+              </div>     
+            </div>
+        </div>
+    </div>
+  <script src="game.js"></script>      
+</body>
+</html>    
