@@ -6,7 +6,7 @@
 }
 
 body{
-    background:url("/backgrounds/mapFlatLay.jpg");
+    background:url("/backgrounds/mapFlatLay.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@ body{
 
 /*****Start Page*****/
 .startBackground{
-    background:url('/backgrounds/mtnValley.jpg') no-repeat center center/cover;
+    background:url('/backgrounds/mtnValley.JPG') no-repeat center center/cover;
 }
 
 #discover{
@@ -76,7 +76,7 @@ body{
     letter-spacing: -28px;
     transform: skewY(-15deg);
     -webkit-text-stroke: 2px #f2f2f2;
-    background: url('/backgrounds/clouds.jpg') no-repeat center center/cover;
+    background: url('/backgrounds/clouds.JPG') no-repeat center center/cover;
     background-clip:text;
     -webkit-background-clip: text;
     color: transparent;
