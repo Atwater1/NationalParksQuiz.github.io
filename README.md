@@ -29,16 +29,16 @@ To install this code, download the zip file, or use GitHub's guidelines to clone
   *
   *
   
-![](README_assets/Quiz_location.PNG)
+![](README_assets/Quiz_location.png)
 * A Game Page
   *f
   *
   *
-![](README_assets/Quiz_Q1.PNG) 
-![](README_assets/Quiz_Q2.PNG) 
-![](README_assets/Quiz_Q3.PNG) 
-![](README_assets/Quiz_Q4.PNG) 
-![](README_assets/Quiz_Q5.PNG) 
+![](README_assets/Quiz_Q1.png) 
+![](README_assets/Quiz_Q2.png) 
+![](README_assets/Quiz_Q3.png) 
+![](README_assets/Quiz_Q4.png) 
+![](README_assets/Quiz_Q5.png) 
 
 * A Results Page
   *
