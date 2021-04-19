@@ -22,7 +22,7 @@ To install this code, download the zip file, or use GitHub's guidelines to clone
 * A Start Page
   *
   *
-![](README_assets/Quiz_startPage.PNG)
+![](ReadMe_assets/Quiz_Q1.png)
 
 * A Location Page
   *   
