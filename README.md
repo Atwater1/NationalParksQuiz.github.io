@@ -20,30 +20,30 @@ To install this code, download the zip file, or use GitHub's guidelines to clone
 ### This project has the following features:
 
 * A Start Page
-  *
-  *
-![](ReadMe_assets/Quiz_Q1.png)
+  *dfsa
+  
+![](ReadMe_assets/Quiz_startPage.png)
 
 * A Location Page
-  *   
-  *
-  *
+  *  fdsfdsa 
+  *fdsa
+  *fdsa
   
-![](README_assets/Quiz_location.png)
+![](ReadMe_assets/Quiz_location.png)
 * A Game Page
   *f
-  *
-  *
-![](README_assets/Quiz_Q1.png) 
-![](README_assets/Quiz_Q2.png) 
-![](README_assets/Quiz_Q3.png) 
-![](README_assets/Quiz_Q4.png) 
-![](README_assets/Quiz_Q5.png) 
+  *fdsa
+  *fdsa
+![](ReadMe_assets/Quiz_Q1.png) 
+![](ReadMe_assets/Quiz_Q2.png) 
+![](ReadMe_assets/Quiz_Q3.png) 
+![](ReadMe_assets/Quiz_Q4.png) 
+![](ReadMe_assets/Quiz_Q5.png) 
 
 * A Results Page
-  *
-  *
-![](assets/Quiz_resultsPage.gif)      
+  *fdsa
+  *fdsa
+![](ReadMe_assets/Quiz_resultsPage.gif)      
   
 
 ### Acknowledgments
