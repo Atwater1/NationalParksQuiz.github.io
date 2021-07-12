@@ -36,10 +36,10 @@ let questions =[
     {
         question:"Do you mind crowds?",
         icons:{
-            choice1: "icons/Q1_A.svg",
-            choice2: "icons/Q1_B.svg",
-            choice3: "icons/Q1_C.svg",
-            choice4: "icons/Q1_D.svg",
+            choice1: "Q1_A.svg",
+            choice2: "Q1_B.svg",
+            choice3: "Q1_C.svg",
+            choice4: "Q1_D.svg",
         },
         choices:{
             choice1: "No crowds",
@@ -145,7 +145,7 @@ progressTracker = () => {
 iconsLoop = () => {
     icon.forEach(icon => {
         const number = icon.dataset['number'];
-        icon.innerHTML = `<img src="/icons/${questions[choicesCounter].icons['choice' + number]}">`;
+        icon.innerHTML = `<img src="icons/${questions[choicesCounter].icons['choice' + number]}">`;
     });
 };
 
