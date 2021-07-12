@@ -187,7 +187,7 @@ calculateMode = (myArray) =>
 
 displayResults = () => {
     if(selectedRegion == "NE" & mode == 1){
-        result_stampImg.innerHTML = "<img src=\'/parks/arcadia.jpg\' width=\'100%\' height=\'100%\'>";
+        result_stampImg.innerHTML = "<img src=\'parks/arcadia.jpg\' width=\'100%\' height=\'100%\'>";
         result_stampLocation.innerHTML = "Arcadia";
         result_stampLocaleType.innerHTML = "National Park";
         result_parkAddress.innerHTML ="Arcadia";
