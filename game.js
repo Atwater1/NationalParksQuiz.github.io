@@ -111,7 +111,7 @@ let questions =[
 ];
 
 //If on location.html, register which region was clicked on and save to local storage
-if(window.location.pathname=="/location.html"){
+if(window.location.pathname=="location.html"){
     region.addEventListener("click", e => {
         localStorage.setItem("selectedRegion", e.target.id);
         }); 
