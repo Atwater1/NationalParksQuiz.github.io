@@ -165,7 +165,7 @@ clickIt = () => {
 
             if(answers.length == 5){
                 localStorage.setItem("mode",calculateMode(answers));
-                window.location.assign("/results.html");
+                window.location.assign("results.html");
             }
 
             questionIndex++;
